@@ -23,7 +23,7 @@ client.once(Events.ClientReady, (c) => {
 // 	webhookClient.send("Hi from the cron job");
 // };
 var job = new CronJob(
-	"0 11 11 * * *",
+	"0 11 23 * * *",
 	function () {
 		webhookClient.send("It's 11:11 bozo, make a wish <@1032480393540153364> ");
 	},
